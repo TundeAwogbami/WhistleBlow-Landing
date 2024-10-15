@@ -1,4 +1,4 @@
-// Add any necessary JavaScript here
+// I'll add other necessary JavaScript here later
 // For example, functionality for adding products to cart, etc.
 
 document.querySelectorAll('.add-to-cart').forEach(button => {
@@ -6,3 +6,5 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
         alert('Item added to cart!');
     });
 });
+
+

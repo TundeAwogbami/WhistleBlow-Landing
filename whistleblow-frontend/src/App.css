@@ -1,0 +1,73 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+}
+
+.logo h1 {
+  color: white;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.nav-buttons button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn,
+.signup-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.cart-btn {
+  background-color: #f39c12;
+  color: white;
+}
+
+.App-header {
+  margin: 2rem;
+}
+
+.shop-now-btn {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

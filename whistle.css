@@ -15,9 +15,13 @@ body {
     align-items: center;
 }
 
-.navbar .logo h1 {
+.navbar .logo a {
     color: white;
-    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.navbar .logo a:hover {
+    color: aqua;
 }
 
 .nav-links {
@@ -38,19 +42,19 @@ body {
 .login-btn {
     padding: 0.5rem 1rem;
     color: white;
-    background-color: #0bf16b;
+    background-color:#ff6347;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .login-btn:hover {
-    background-color: #ff6347;
+    background-color:aqua;
 }
 
 /* Hero Section */
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('Images/Hero.jpeg');
     height: 100vh;
     color: white;
     display: flex;
@@ -62,20 +66,24 @@ body {
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    row-gap: 5rem;
 }
 
 .hero-btn {
-    background-color: #0bf16b;
+    background-color:#ff6347;
     padding: 0.8rem 2rem;
     border: none;
     color: white;
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .hero-btn:hover {
-background-color: #ff6347;
+background-color:aqua;
 }
 
 
