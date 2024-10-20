@@ -11,6 +11,13 @@
 </head>
 <body>
 
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button class="btn search-btn" onclick="searchProducts()">Search</button>
+    </div>
+
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">
@@ -25,6 +32,34 @@
         </ul>
         <button class="btn login-btn">Login</button>
     </nav>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button class="btn" onclick="login()">Login</button>
+            <p>Don't have an account? <span class="signup-link" onclick="openModal('signupModal')">Sign Up</span></p>
+        </div>
+    </div>
+    
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Sign Up</h2>
+            <input type="text" id="signupName" placeholder="Full Name">
+            <input type="text" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <button class="btn" onclick="signup()">Sign Up</button>
+        </div>
+    </div>
+    
+    <!-- Trigger login modal in navbar -->
+    <button class="btn login-btn" onclick="openModal('loginModal')">Login</button>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -78,6 +113,19 @@
             </div>
         </div>
     </section>
+
+    <button class="btn cart-btn" onclick="openModal('cartModal')">Cart (<span id="cartCount">0</span>)</button>
+    
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('cartModal')">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <button class="btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
